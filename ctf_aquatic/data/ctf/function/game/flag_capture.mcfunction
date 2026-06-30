@@ -6,6 +6,3 @@ $scoreboard players add $(team) ctf.score 1
 $tellraw @a ["",{"text":"[CTF] ","color":"aqua","bold":true},{"selector":"@s"},{"text":" a marque pour l'equipe $(team) !","color":"gold"}]
 
 $execute as @e[type=armor_stand,tag=ctf_flag_$(color)_spawn] at @s run setblock ~ ~ ~ $(color)_banner[rotation=0]{CustomName:'{"text":"Drapeau $(color)"}'} replace
-
-execute if score red ctf.score >= game ctf.win_score run function ctf:game/win {team:"red"}
-execute if score blue ctf.score >= game ctf.win_score run function ctf:game/win {team:"blue"}

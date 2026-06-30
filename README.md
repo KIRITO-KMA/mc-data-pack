@@ -40,8 +40,8 @@ au lieu d'en créer un doublon.
 ## Lancer une partie
 
 1. Répartir les joueurs : `/team join red <joueur>` / `/team join blue <joueur>`
-2. (Optionnel) Changer le score de victoire (3 par défaut) :
-   `/scoreboard players set game ctf.win_score 5`
+2. (Optionnel) Changer la durée de la partie en secondes (600 s = 10 min par
+   défaut) : `/scoreboard players set game ctf.match_seconds 900`
 3. `/function ctf:setup/init`
 
 Cette commande vérifie que tous les marqueurs et les deux équipes sont prêts.
@@ -49,7 +49,10 @@ S'il manque quelque chose, un message clair l'indique et la partie ne démarre
 pas — vous pouvez corriger puis relancer `ctf:setup/init` sans risque.
 
 Quand tout est prêt : drapeaux posés, kits distribués, joueurs téléportés à
-leur spawn, partie lancée.
+leur spawn, partie lancée. Un compte à rebours s'affiche en permanence dans
+l'action bar. À la fin du temps imparti, **l'équipe avec le plus de points
+gagne** (égalité possible). Capturer des drapeaux ne met pas fin à la partie
+avant l'heure — seul le chrono décide.
 
 Pour arrêter une partie en cours sans la relancer : `/function ctf:setup/stop`
 

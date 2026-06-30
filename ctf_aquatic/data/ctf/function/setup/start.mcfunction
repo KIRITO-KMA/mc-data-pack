@@ -4,6 +4,8 @@ gamerule naturalRegeneration true
 
 scoreboard players set red ctf.score 0
 scoreboard players set blue ctf.score 0
+scoreboard players operation game ctf.time_left = game ctf.match_seconds
+scoreboard players set game ctf.tick_acc 0
 scoreboard players reset @a ctf.cd_trident
 scoreboard players reset @a ctf.cd_shield
 scoreboard players reset @a ctf.cd_sonar
@@ -20,6 +22,6 @@ execute as @a[team=blue] at @e[type=armor_stand,tag=ctf_spawn_blue,limit=1] run 
 
 scoreboard players operation @a ctf.last_deaths = @a ctf.deaths
 scoreboard players set game ctf.state 1
-tellraw @a ["",{"text":"[CTF] ","color":"aqua","bold":true},{"text":"La partie commence ! Premier a ","color":"white"},{"score":{"name":"game","objective":"ctf.win_score"},"color":"gold"},{"text":" points gagne.","color":"white"}]
+tellraw @a ["",{"text":"[CTF] ","color":"aqua","bold":true},{"text":"La partie commence ! L'equipe avec le plus de points a la fin du temps imparti gagne.","color":"white"}]
 title @a title ["",{"text":"CTF Aquatic","color":"aqua","bold":true}]
 title @a subtitle [{"text":"Capturez le drapeau ennemi !","color":"yellow"}]
