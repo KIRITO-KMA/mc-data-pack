@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "used": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "item": {
+          "nbt": "{academie:{wand:\"cheminee\"}}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "academie:fumee/place_marker"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "used": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "item": {
+          "nbt": "{academie:{wand:\"cloche\"}}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "academie:cloche/place_marker"
+  }
+}

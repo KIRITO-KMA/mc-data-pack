@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "used": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "item": {
+          "nbt": "{academie:{key:\"dortoir1\"}}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "academie:cles/porte_dortoir1_toggle"
+  }
+}

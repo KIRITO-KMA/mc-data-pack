@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "used": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "item": {
+          "nbt": "{academie:{item:\"montre\"}}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "academie:montre/show"
+  }
+}
