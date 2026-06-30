@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "used_item": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": "{ctf:{item:[]}}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "ctf:items/on_use"
+  }
+}
