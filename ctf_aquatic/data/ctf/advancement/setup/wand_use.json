@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "used_wand": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": "{ctf:{wand:[]}}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "ctf:setup/wand_place"
+  }
+}

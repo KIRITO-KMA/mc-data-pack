@@ -1,3 +1,4 @@
+execute if score game ctf.state matches 1 run function ctf:game/timer
 execute if score game ctf.state matches 1 run function ctf:game/flag_check
 execute if score game ctf.state matches 1 run function ctf:game/respawn
 execute if score game ctf.state matches 1 run function ctf:items/tick_items
