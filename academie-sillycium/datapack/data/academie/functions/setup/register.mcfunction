@@ -10,6 +10,10 @@ scoreboard objectives add academie.wind_dir dummy
 scoreboard objectives add academie.const dummy
 
 scoreboard objectives add academie.cloche_auto dummy
+scoreboard objectives add academie.door_state dummy
+scoreboard objectives add academie.montre_cd dummy
+scoreboard objectives add academie.wand_cd dummy
+scoreboard objectives add academie.key1_cd dummy
 scoreboard objectives add academie.last_mm dummy
 scoreboard objectives add academie.s1_hh dummy
 scoreboard objectives add academie.s1_mm dummy
