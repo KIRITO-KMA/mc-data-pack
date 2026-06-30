@@ -1,7 +1,7 @@
-# Affiche l'heure RP a celui qui consulte sa montre. Recompense de
-# l'advancement academie:item/use_montre, s'execute "as" le joueur.
+# Affiche l'heure RP. S'execute "as" le joueur via items/tick.
+# Cooldown 3s (60 ticks) pour ne pas spammer l'action bar.
 
-advancement revoke @s only academie:item/use_montre
+scoreboard players set @s academie.montre_cd 60
 
 execute store result score game academie.daytime run time query daytime
 
