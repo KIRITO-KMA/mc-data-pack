@@ -8,3 +8,6 @@ README.
 
 - [`ctf-aquatic/`](ctf-aquatic/README.md) — mini-jeu CTF générique avec items
   custom, pensé pour les maps aquatiques submergées.
+- [`academie-sillycium/`](academie-sillycium/README.md) — data pack RP magie
+  scolaire (1.20.1) : cloche, montre, contrôle du temps, carnet magique,
+  fumée de cheminée, clés/portes verrouillables.
