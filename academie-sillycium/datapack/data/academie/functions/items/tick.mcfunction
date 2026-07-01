@@ -1,5 +1,11 @@
 # Detection des items custom sans passer par les advancements (fiable sur Mohist).
 
+# Initialise les cooldowns a 0 pour tout joueur qui n'a pas encore de score
+# (sinon le filtre scores={...=0} ne matche jamais tant que le score n'existe pas).
+scoreboard players add @a academie.montre_cd 0
+scoreboard players add @a academie.wand_cd 0
+scoreboard players add @a academie.key1_cd 0
+
 # --- Montre : affiche l'heure quand on la tient en main, toutes les 3s ---
 execute as @a[nbt={SelectedItem:{tag:{academie:{item:"montre"}}}},scores={academie.montre_cd=0}] run function academie:montre/show
 scoreboard players remove @a[scores={academie.montre_cd=1..}] academie.montre_cd 1

@@ -8,7 +8,7 @@ tellraw @s ["",{"text":"    (doit valoir 1)","color":"dark_gray"}]
 
 # 2. Verifie si la montre a le bon NBT quand elle est tenue
 execute if data entity @s SelectedItem.tag.academie run tellraw @s ["",{"text":"[2] Item en main a un tag academie : ","color":"gray"},{"text":"OUI","color":"green"}]
-execute unless if data entity @s SelectedItem.tag.academie run tellraw @s ["",{"text":"[2] Item en main a un tag academie : ","color":"gray"},{"text":"NON (relance /function academie:montre/give et tiens la montre)","color":"red"}]
+execute unless data entity @s SelectedItem.tag.academie run tellraw @s ["",{"text":"[2] Item en main a un tag academie : ","color":"gray"},{"text":"NON (relance /function academie:montre/give et tiens la montre)","color":"red"}]
 
 # 3. Cooldown montre
 tellraw @s ["",{"text":"[3] Cooldown montre = ","color":"gray"},{"score":{"name":"@s","objective":"academie.montre_cd"},"color":"white"}]
